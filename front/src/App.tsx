@@ -14,7 +14,7 @@ function App() {
   return (
     <Container>
       <Nav setView={setView} />
-      <Outlet context={{ view, setView } satisfies ViewContext} />
+      <Outlet context={{ view, setView } as ViewContext} />
     </Container>
   );
 }
